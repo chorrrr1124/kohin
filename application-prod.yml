@@ -1,0 +1,37 @@
+server:
+  port: 9092
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ydt_prod?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    username: ydt
+    password: Ydt@0212
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 1
+    timeout: 2000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  rabbitmq:
+    # 主机ip，修改成实际rabbitmq配置
+    host: 127.0.0.1
+    # 端口，修改成实际rabbitmq配置
+    port: 5672
+    # 用户名，修改成实际rabbitmq配置
+    username: admin
+    # 用户密码，修改成实际rabbitmq配置
+    password: admin
+    # 虚拟host可以不设置，默认配置写virtual-host: /
+    virtual-host: /
+  devtools:
+    restart:
+      enabled: true

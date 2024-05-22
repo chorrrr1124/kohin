@@ -1,0 +1,49 @@
+server:
+  port: 9092
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 数据库
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/new_kohin?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: Buygood888
+      # 连接池-初始化大小
+      initial-size: 10
+      # 连接池-最大连接数
+      max-active: 100
+      # 最大等待时间
+      max-wait: 60000
+      # 连接池-最小空闲数
+      min-idle: 10
+      # 检测空闲连接
+      test-while-idle: true
+      # 最小空闲时间
+      min-evictable-idle-time-millis: 300000
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 1
+    timeout: 2000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+minio:
+  endpoint: http://127.0.0.1:6000 #Minio服务所在地址
+  bucketName: testbucket #存储桶名称
+  accessKey: minioadmin #访问的key
+  secretKey: minioadmin #访问的秘钥
+otp:
+  issuer: hengda
+  secret-size: 64
+  algorithm: SHA1PRNG
+  window-size: 2
+  per: 30
