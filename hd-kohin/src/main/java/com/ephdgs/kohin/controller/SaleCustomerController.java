@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("kohin/sale/productCustomer")
+@RequestMapping("api/kohin/sale/productCustomer")
 @CrossOrigin("*")
 public class SaleCustomerController {
 

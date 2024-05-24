@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("kohin/sale")
+@RequestMapping("api/kohin/sale")
 @CrossOrigin("*")
 public class SaleController {
 
     private KohinSaleServiceImpl kohinSaleService;
 
-@Autowired
+    @Autowired
     public void setKohinSaleService(KohinSaleServiceImpl kohinSaleService) {
         this.kohinSaleService = kohinSaleService;
     }
@@ -28,7 +28,7 @@ public class SaleController {
 
     @PostMapping("pageSaleOrderByUserId")
     public RestfulDTO<Object> pageSaleOrderByUserId(@RequestBody KohinSaleDTO kohinSaleDTO) {
-    return HttpResponseUtil.data(kohinSaleService.getSaleOrderByUserId(new Page<>(kohinSaleDTO.getCurrentPage(), kohinSaleDTO.getPageSize()), kohinSaleDTO.getUserId()));
+        return HttpResponseUtil.data(kohinSaleService.getSaleOrderByUserId(new Page<>(kohinSaleDTO.getCurrentPage(), kohinSaleDTO.getPageSize()), kohinSaleDTO.getUserId()));
     }
 
     @PostMapping("pageSaleOrderProductBySaleOrderId")

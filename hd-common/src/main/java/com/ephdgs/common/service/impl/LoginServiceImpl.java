@@ -4,7 +4,7 @@ import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.ephdgs.common.dao.UserDao;
-import com.ephdgs.common.enums.UserEnum;
+import com.ephdgs.common.enums.SysFlagEnum;
 import com.ephdgs.common.pojo.po.UserPO;
 import com.ephdgs.common.service.LoginService;
 import com.ephdgs.common.utils.GoogleOtpUtil;
@@ -43,7 +43,7 @@ public class LoginServiceImpl implements LoginService {
     public String getSalt(String username) {
         QueryWrapper<UserPO> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
-        wrapper.eq("flag", UserEnum.USER_ENABLE);
+        wrapper.eq("flag", SysFlagEnum.USER_ENABLE);
         UserPO userPO = userDao.selectOne(wrapper);
         return userPO == null ? null : userPO.getSalt();
     }
@@ -52,7 +52,7 @@ public class LoginServiceImpl implements LoginService {
     public Boolean doLogin(String username, String password) {
         QueryWrapper<UserPO> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
-        wrapper.eq("flag", UserEnum.USER_ENABLE);
+        wrapper.eq("flag", SysFlagEnum.USER_ENABLE);
         if (!userDao.exists(wrapper)) {
             return false;
         } else {
@@ -69,7 +69,7 @@ public class LoginServiceImpl implements LoginService {
     public String getOtpCode(String username) throws IOException {
         QueryWrapper<UserPO> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
-        wrapper.eq("flag", UserEnum.USER_ENABLE);
+        wrapper.eq("flag", SysFlagEnum.USER_ENABLE);
         UserPO userPO = userDao.selectOne(wrapper);
         String key;
         String secret;
@@ -98,7 +98,7 @@ public class LoginServiceImpl implements LoginService {
     public Boolean authOtpCode(String username, Integer code) {
         QueryWrapper<UserPO> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
-        wrapper.eq("flag", UserEnum.USER_ENABLE);
+        wrapper.eq("flag", SysFlagEnum.USER_ENABLE);
         UserPO userPO = userDao.selectOne(wrapper);
         if (userPO != null) {
             if (googleOtpUtil.checkCode(userPO.getOtpAuthSecret(), code)) {

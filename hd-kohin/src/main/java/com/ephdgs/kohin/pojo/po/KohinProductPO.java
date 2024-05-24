@@ -20,4 +20,5 @@ public class KohinProductPO extends BasePO {
     private String type;
     private String series;
     private BigDecimal price;
+    private String spec;
 }

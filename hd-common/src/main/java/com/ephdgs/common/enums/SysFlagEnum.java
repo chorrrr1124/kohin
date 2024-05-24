@@ -7,11 +7,11 @@ import com.baomidou.mybatisplus.annotation.IEnum;
  * @Date: 2024/5/8
  * @Author: Hill
  */
-public enum UserEnum implements IEnum<Integer> {
+public enum SysFlagEnum implements IEnum<Integer> {
     USER_ENABLE(1),
     USER_DISABLED(-1);
 
-    UserEnum(Integer code) {
+    SysFlagEnum(Integer code) {
         this.code = code;
     }
 

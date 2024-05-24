@@ -3,7 +3,7 @@ package com.ephdgs.common.controller;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.ephdgs.common.annotation.ApiVersion;
-import com.ephdgs.common.enums.UserEnum;
+import com.ephdgs.common.enums.SysFlagEnum;
 import com.ephdgs.common.pojo.dto.RestfulDTO;
 import com.ephdgs.common.pojo.dto.UpdatePasswordDTO;
 import com.ephdgs.common.pojo.dto.UserDTO;
@@ -54,7 +54,7 @@ public class UserController extends BaseController {
         BeanUtils.copyProperties(userDTO, userPO);
         UpdateWrapper<UserPO> wrapper = new UpdateWrapper<>();
         wrapper.eq("code", userDTO.getCode());
-        wrapper.set("flag", UserEnum.USER_DISABLED);
+        wrapper.set("flag", SysFlagEnum.USER_DISABLED);
         userService.update(wrapper);
         return HttpResponseUtil.ok();
     }
