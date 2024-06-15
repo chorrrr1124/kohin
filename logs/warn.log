@@ -1,0 +1,81 @@
+15:46:00.613 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:46:00.645 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:46:00.677 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:46:00.702 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:46:35.493 [http-nio-9092-exec-2] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT kp.`name`, kp.`code`, kp.`series`, kp.`spec` ->> "$.width" AS width,kp.`spec` ->> "$.warpage" AS warpage,kp.`spec` ->> "$.length" AS length,ip.`unit`, ip. `inventory_num`FROM kohin_inventory_product ip LEFT JOIN kohin_inventory_order io ON ip.kohin_inventory_order_id = io.kohin_inventory_order_id LEFT JOIN kohin_warehouse_product wp ON wp.kohin_warehouse_product_id = ip.kohin_warehouse_product_id LEFT JOIN kohin_product kp ON kp.kohin_product_id = wp.kohin_product_id WHERE io.kohin_warehouse_id =?", exception:
+java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
+    at line 1, column 53.
+
+Was expecting one of:
+
+    "&"
+    "::"
+    "<<"
+    ">>"
+    "CONNECT"
+    "EMIT"
+    "GROUP"
+    "HAVING"
+    "INTO"
+    "START"
+    "WINDOW"
+    "["
+    "^"
+    "|"
+    <EOF>
+    <ST_SEMICOLON>
+
+15:51:26.637 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:51:26.664 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:51:26.695 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:51:26.720 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+16:17:18.774 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+16:17:18.801 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+16:17:18.832 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+16:17:18.860 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+16:26:23.030 [http-nio-9092-exec-5] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
+java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
+    at line 1, column 55.
+
+Was expecting one of:
+
+    "&"
+    "::"
+    "<<"
+    ">>"
+    "CONNECT"
+    "EMIT"
+    "GROUP"
+    "HAVING"
+    "INTO"
+    "START"
+    "WINDOW"
+    "["
+    "^"
+    "|"
+    <EOF>
+    <ST_SEMICOLON>
+
+16:26:32.247 [http-nio-9092-exec-6] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
+java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
+    at line 1, column 55.
+
+Was expecting one of:
+
+    "&"
+    "::"
+    "<<"
+    ">>"
+    "CONNECT"
+    "EMIT"
+    "GROUP"
+    "HAVING"
+    "INTO"
+    "START"
+    "WINDOW"
+    "["
+    "^"
+    "|"
+    <EOF>
+    <ST_SEMICOLON>
+
