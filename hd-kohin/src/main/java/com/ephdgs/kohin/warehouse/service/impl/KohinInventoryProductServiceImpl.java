@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ephdgs.kohin.warehouse.dao.KohinInventoryProductDAO;
-import com.ephdgs.kohin.warehouse.pojo.dto.KohinInventoryProductDTO;
 import com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO;
 import com.ephdgs.kohin.warehouse.pojo.vo.KohinInventoryProductVO;
 import com.ephdgs.kohin.warehouse.service.KohinInventoryProductService;
@@ -23,7 +22,7 @@ public class KohinInventoryProductServiceImpl extends ServiceImpl<KohinInventory
     }
 
     @Override
-    public IPage<KohinInventoryProductVO> pageKohinProductByKohinInventoryProductId(Page<KohinInventoryProductDTO> page, Integer kohinInventoryProductId) {
+    public IPage<KohinInventoryProductVO> pageKohinProductByKohinInventoryProductId(Page<KohinInventoryProductPO> page, Integer kohinInventoryProductId) {
         return kohinInventoryProductDAO.selectInventoryProductPOPage(page, kohinInventoryProductId);
     }
 }

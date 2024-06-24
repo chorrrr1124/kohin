@@ -6,4 +6,11 @@ import lombok.Data;
 @Data
 public class KohinInventoryProductDTO extends PageDTO {
     private Integer kohinInventoryProductId;
+    private Integer kohinProductId;
+    private String name;
+    private String series;
+    private String width;
+    private String length;
+    private String warpage;
+    private String unit;
 }

@@ -1,14 +1,14 @@
-17:13:04.896 [main] INFO  com.ephdgs.AppStart - Starting AppStart using Java 21.0.2 with PID 15012 (F:\idea workspace\hd-erp-server\hd-web\target\classes started by chor in F:\idea workspace\hd-erp-server)
-17:13:04.902 [main] INFO  com.ephdgs.AppStart - The following 1 profile is active: "dev"
-17:13:07.591 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
-17:13:07.592 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-17:13:07.593 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-17:13:07.657 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mes] - Initializing Spring embedded WebApplicationContext
-17:13:08.906 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-17:13:08.938 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-17:13:08.965 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-17:13:08.992 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-17:13:10.672 [cluster-ClusterId{value='666d5b26d7bb577db079b63b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+22:13:38.770 [main] INFO  com.ephdgs.AppStart - Starting AppStart using Java 21.0.2 with PID 18380 (F:\idea workspace\hd-erp-server\hd-web\target\classes started by chor in F:\idea workspace\hd-erp-server)
+22:13:38.776 [main] INFO  com.ephdgs.AppStart - The following 1 profile is active: "dev"
+22:13:40.283 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+22:13:40.285 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:13:40.285 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+22:13:40.334 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mes] - Initializing Spring embedded WebApplicationContext
+22:13:41.363 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:41.389 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:41.421 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:42.631 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.2+13-LTS-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@c0cb9c2, com.mongodb.Jep395RecordCodecProvider@eb66b47, com.mongodb.KotlinCodecProvider@11e75942]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+22:13:42.626 [cluster-ClusterId{value='66797f1663dc155415844a8d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:84) ~[mongodb-driver-core-4.11.2.jar:?]
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -20,7 +20,7 @@ com.mongodb.MongoSocketOpenException: Exception opening socket
 Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
 	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
@@ -28,34 +28,6 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104) ~[mongodb-driver-core-4.11.2.jar:?]
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:78) ~[mongodb-driver-core-4.11.2.jar:?]
 	... 4 more
-17:13:10.680 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.2+13-LTS-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4b6fc231, com.mongodb.Jep395RecordCodecProvider@6b7ebac1, com.mongodb.KotlinCodecProvider@39dee5fd]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
-17:13:11.189 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
-17:13:11.222 [main] INFO  com.ephdgs.AppStart - Started AppStart in 6.828 seconds (process running for 8.039)
-17:13:26.265 [http-nio-9092-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mes] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:13:26.409 [http-nio-9092-exec-1] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
-java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
-    at line 1, column 55.
-
-Was expecting one of:
-
-    "&"
-    "::"
-    "<<"
-    ">>"
-    "CONNECT"
-    "EMIT"
-    "GROUP"
-    "HAVING"
-    "INTO"
-    "START"
-    "WINDOW"
-    "["
-    "^"
-    "|"
-    <EOF>
-    <ST_SEMICOLON>
-
-17:13:26.610 [http-nio-9092-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-17:13:44.572 [http-nio-9092-exec-3] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.exceptionHandler(GlobalExceptionHandler.java:33)-No static resource api/kohin/warehouse/inventoryproduct/pageKohinProduct.
-17:14:05.236 [http-nio-9092-exec-4] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.parameterBodyMissingExceptionHandler(GlobalExceptionHandler.java:27)-JSON parse error: Cannot deserialize value of type `com.ephdgs.kohin.warehouse.pojo.dto.KohinInventoryProductDTO` from Array value (token `JsonToken.START_ARRAY`)
-17:14:13.330 [http-nio-9092-exec-6] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.parameterBodyMissingExceptionHandler(GlobalExceptionHandler.java:27)-JSON parse error: Cannot deserialize value of type `com.ephdgs.kohin.warehouse.pojo.dto.KohinInventoryProductDTO` from Array value (token `JsonToken.START_ARRAY`)
+22:13:43.034 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+22:13:43.057 [main] INFO  com.ephdgs.AppStart - Started AppStart in 4.684 seconds (process running for 5.374)
+22:21:55.623 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...

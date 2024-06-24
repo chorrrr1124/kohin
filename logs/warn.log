@@ -1,8 +1,113 @@
-15:46:00.613 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:46:00.645 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:46:00.677 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:46:00.702 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:46:35.493 [http-nio-9092-exec-2] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT kp.`name`, kp.`code`, kp.`series`, kp.`spec` ->> "$.width" AS width,kp.`spec` ->> "$.warpage" AS warpage,kp.`spec` ->> "$.length" AS length,ip.`unit`, ip. `inventory_num`FROM kohin_inventory_product ip LEFT JOIN kohin_inventory_order io ON ip.kohin_inventory_order_id = io.kohin_inventory_order_id LEFT JOIN kohin_warehouse_product wp ON wp.kohin_warehouse_product_id = ip.kohin_warehouse_product_id LEFT JOIN kohin_product kp ON kp.kohin_product_id = wp.kohin_product_id WHERE io.kohin_warehouse_id =?", exception:
+12:43:02.316 [http-nio-9092-exec-2] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.parameterBodyMissingExceptionHandler(GlobalExceptionHandler.java:27)-JSON parse error: Cannot deserialize value of type `com.ephdgs.kohin.warehouse.pojo.dto.KohinInventoryProductDTO` from Array value (token `JsonToken.START_ARRAY`)
+15:08:25.585 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:08:25.612 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:08:25.643 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+15:08:25.668 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:47:06.402 [http-nio-9092-exec-2] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.exceptionHandler(GlobalExceptionHandler.java:33)-
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column '$.width' in 'field list'
+### The error may exist in com/ephdgs/kohin/warehouse/dao/KohinInventoryProductDAO.java (best guess)
+### The error may involve com.ephdgs.kohin.warehouse.dao.KohinInventoryProductDAO.selectInventoryProductPOPage-Inline
+### The error occurred while setting parameters
+### SQL: SELECT kp.`name`, kp.`code`, kp.`series`, kp.`spec` >> `$.width` AS width,kp.`spec` >> `$.warpage` AS warpage,kp.`spec` >> `$.length` AS length,ip.`unit`, ip. `inventory_num`FROM kohin_inventory_product ip LEFT JOIN kohin_inventory_order io ON ip.kohin_inventory_order_id = io.kohin_inventory_order_id LEFT JOIN kohin_warehouse_product wp ON wp.kohin_warehouse_product_id = ip.kohin_warehouse_product_id LEFT JOIN kohin_product kp ON kp.kohin_product_id = wp.kohin_product_id WHERE ip.kohin_inventory_product_id =? LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column '$.width' in 'field list'
+; bad SQL grammar []
+20:47:17.112 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:47:17.138 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:47:17.169 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:47:17.194 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:47:29.209 [http-nio-9092-exec-1] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.exceptionHandler(GlobalExceptionHandler.java:33)-
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column '$.width' in 'field list'
+### The error may exist in com/ephdgs/kohin/warehouse/dao/KohinInventoryProductDAO.java (best guess)
+### The error may involve com.ephdgs.kohin.warehouse.dao.KohinInventoryProductDAO.selectInventoryProductPOPage-Inline
+### The error occurred while setting parameters
+### SQL: SELECT kp.`name`, kp.`code`, kp.`series`, kp.`spec` >> `$.width` AS width,kp.`spec` >> `$.warpage` AS warpage,kp.`spec` >> `$.length` AS length,ip.`unit`, ip. `inventory_num`FROM kohin_inventory_product ip LEFT JOIN kohin_inventory_order io ON ip.kohin_inventory_order_id = io.kohin_inventory_order_id LEFT JOIN kohin_warehouse_product wp ON wp.kohin_warehouse_product_id = ip.kohin_warehouse_product_id LEFT JOIN kohin_product kp ON kp.kohin_product_id = wp.kohin_product_id WHERE ip.kohin_inventory_product_id =? LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column '$.width' in 'field list'
+; bad SQL grammar []
+20:49:23.991 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:49:24.021 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:49:24.053 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:49:24.078 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:57:17.138 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:57:17.166 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:57:17.198 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+20:57:17.223 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:01:04.449 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:01:04.475 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:01:04.507 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:01:04.535 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:03:12.027 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:03:12.055 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:03:12.087 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:03:12.115 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:08:02.887 [http-nio-9092-exec-6] ERROR MyLog4j - com.ephdgs.common.handler.GlobalExceptionHandler.exceptionHandler(GlobalExceptionHandler.java:33)-Request method 'GET' is not supported
+21:29:30.842 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:29:30.869 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:29:30.901 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:29:30.926 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:54:46.143 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:54:46.172 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:54:46.204 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:54:46.229 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:57:46.117 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:57:46.144 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:57:46.174 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+21:57:46.200 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:07:43.910 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:07:43.936 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:07:43.969 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:10:30.732 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:10:30.764 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:10:30.794 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:10:49.101 [http-nio-9092-exec-3] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
+java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
+    at line 1, column 55.
+
+Was expecting one of:
+
+    "&"
+    "::"
+    "<<"
+    ">>"
+    "CONNECT"
+    "EMIT"
+    "GROUP"
+    "HAVING"
+    "INTO"
+    "START"
+    "WINDOW"
+    "["
+    "^"
+    "|"
+    <EOF>
+    <ST_SEMICOLON>
+
+22:11:46.476 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:11:46.507 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:11:46.544 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:11:53.439 [http-nio-9092-exec-2] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
+java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
+    at line 1, column 55.
+
+Was expecting one of:
+
+    "&"
+    "::"
+    "<<"
+    ">>"
+    "CONNECT"
+    "EMIT"
+    "GROUP"
+    "HAVING"
+    "INTO"
+    "START"
+    "WINDOW"
+    "["
+    "^"
+    "|"
+    <EOF>
+    <ST_SEMICOLON>
+
+22:12:10.141 [http-nio-9092-exec-5] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT kp.`name`, kp.`code`, kp.`series`, kp.`spec` ->> "$.width" AS width,kp.`spec` ->> "$.warpage" AS warpage,kp.`spec` ->> "$.length" AS length,ip.`unit`, ip. `inventory_num`FROM kohin_inventory_product ip LEFT JOIN kohin_warehouse_product wp ON wp.kohin_warehouse_product_id = ip.kohin_warehouse_product_id LEFT JOIN kohin_product kp ON kp.kohin_product_id = wp.kohin_product_id WHERE ip.kohin_inventory_product_id =?", exception:
 java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
     at line 1, column 53.
 
@@ -25,57 +130,9 @@ Was expecting one of:
     <EOF>
     <ST_SEMICOLON>
 
-15:51:26.637 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:51:26.664 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:51:26.695 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-15:51:26.720 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-16:17:18.774 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-16:17:18.801 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-16:17:18.832 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-16:17:18.860 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-16:26:23.030 [http-nio-9092-exec-5] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
-java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
-    at line 1, column 55.
-
-Was expecting one of:
-
-    "&"
-    "::"
-    "<<"
-    ">>"
-    "CONNECT"
-    "EMIT"
-    "GROUP"
-    "HAVING"
-    "INTO"
-    "START"
-    "WINDOW"
-    "["
-    "^"
-    "|"
-    <EOF>
-    <ST_SEMICOLON>
-
-16:26:32.247 [http-nio-9092-exec-6] WARN  com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor - optimize this sql to a count sql has exception, sql:"SELECT product.`name`, product.`code`, product.`spec` ->> "$.width" AS width, product.`spec` ->> "$.length" AS length, product.`spec` ->> "$.warpage" AS warpage, wp.num FROM kohin_warehouse_product wp LEFT JOIN kohin_product product ON product.kohin_product_id = wp.kohin_product_id WHERE wp.kohin_warehouse_id = ?", exception:
-java.util.concurrent.ExecutionException: net.sf.jsqlparser.parser.ParseException: Encountered unexpected token: "->>" "->>"
-    at line 1, column 55.
-
-Was expecting one of:
-
-    "&"
-    "::"
-    "<<"
-    ">>"
-    "CONNECT"
-    "EMIT"
-    "GROUP"
-    "HAVING"
-    "INTO"
-    "START"
-    "WINDOW"
-    "["
-    "^"
-    "|"
-    <EOF>
-    <ST_SEMICOLON>
-
+22:12:35.564 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:12:35.592 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:12:35.623 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:41.363 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinWarehouseOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:41.389 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinIoProductPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+22:13:41.421 [main] WARN  com.baomidou.mybatisplus.core.injector.DefaultSqlInjector - class com.ephdgs.kohin.warehouse.pojo.po.KohinInventoryOrderPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
